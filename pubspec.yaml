@@ -1,0 +1,28 @@
+name: work_station_web_application
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+  - assets/images/lp_image.png
+  
+  fonts:
+  - family: Montserrat
+    fonts:
+    - asset: assets/fonts/Montserrat-Bold.ttf
+    - asset: assets/fonts/Montserrat-Regular.ttf
