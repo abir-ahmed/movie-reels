@@ -97,7 +97,7 @@ class MobileNavBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Padding(
+    return Padding(
       padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
       child: Column(
         children: [
@@ -131,6 +131,19 @@ class MobileNavBar extends StatelessWidget {
                 Text(
                   'Portfolio',
                   style: TextStyle(color: Colors.white),
+                ),
+                SizedBox(
+                  width: 30.0,
+                ),
+                MaterialButton(
+                  color: Colors.pink,
+                  shape: const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                  onPressed: () {},
+                  child: const Text(
+                    'Search',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
               ],
             ),
