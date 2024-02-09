@@ -31,12 +31,7 @@ class MovieReelApp extends StatelessWidget {
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Colors.purple, Colors.red]
-                  //   colors: [
-
-                  // Color.fromRGBO(195, 20, 50, 1.0),
-                  // Color.fromRGBO(36, 11, 54, 1.0) ]
-                  )),
+                  colors: [Colors.purple, Colors.red])),
           child: const SingleChildScrollView(
             child: Column(
               children: [
