@@ -34,6 +34,7 @@ class MovieReelApp extends StatelessWidget {
                   colors: [Colors.purple, Colors.red])),
           child: const SingleChildScrollView(
             child: Column(
+              mainAxisSize: MainAxisSize.max,
               children: [
                 NavigationTopBar(),
                 Padding(
