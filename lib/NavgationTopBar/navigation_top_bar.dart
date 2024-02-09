@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NavBar extends StatelessWidget {
-  const NavBar({super.key});
+class NavigationTopBar extends StatelessWidget {
+  const NavigationTopBar({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class DesktopNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           const Text(
-            'Work Station App',
+            'Movie Reels',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 30.0,
@@ -67,7 +67,7 @@ class DesktopNavBar extends StatelessWidget {
                 shape: const RoundedRectangleBorder(
                     borderRadius: BorderRadius.all(Radius.circular(20.0))),
                 child: const Text(
-                  'Get Started',
+                  'Search',
                   style: TextStyle(color: Colors.white),
                 ),
                 onPressed: () {},
@@ -102,7 +102,7 @@ class MobileNavBar extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            'Work Station App',
+            'Movie Reels',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 30.0,

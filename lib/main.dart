@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:work_station_web_application/LandingPage/landing_page.dart';
-import 'package:work_station_web_application/NavBar/nav_bar.dart';
+import 'package:work_station_web_application/NavgationTopBar/navigation_top_bar.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,15 +12,16 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Web Application Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Movie Reels App',
       theme: ThemeData(primarySwatch: Colors.blue, fontFamily: "Montserrat"),
-      home: const MyHomePageApp(),
+      home: const MovieReelApp(),
     );
   }
 }
 
-class MyHomePageApp extends StatelessWidget {
-  const MyHomePageApp({super.key});
+class MovieReelApp extends StatelessWidget {
+  const MovieReelApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -37,12 +38,11 @@ class MyHomePageApp extends StatelessWidget {
           child: const SingleChildScrollView(
             child: Column(
               children: [
-                NavBar(),
+                NavigationTopBar(),
                 Padding(
-                  padding:
-                      EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
-                  child: LandingPage(),
-                ),
+                    padding:
+                        EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
+                    child: LandingPage()),
               ],
             ),
           )),

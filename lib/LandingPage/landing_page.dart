@@ -11,26 +11,29 @@ class LandingPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              "Web\nDevelopers",
+              "Movie Reels\nWatch Movie Review or Trailer",
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 40.0,
+                  fontSize: 30.0,
                   fontWeight: FontWeight.bold),
             ),
             const Padding(
               padding: EdgeInsets.symmetric(vertical: 20.0),
               child: Text(
-                "We have taken each and every project handed over to us as a challenge, which has helped us achieve a high project success rate.",
+                "This project is a starting point to develop a responsive flutter app. It will support Web Browser, Android and iOS platform. This application is for audience who loves to watch movies Reviews. We'll also provide any new or upcomming movie trailers.",
                 style: TextStyle(color: Colors.white, fontSize: 16.0),
               ),
             ),
             MaterialButton(
-              color: Colors.white,
+              color: Colors.pink,
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(20.0))),
               child: const Padding(
-                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
-                child: Text('Our Packages'),
+                padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 30.0),
+                child: Text(
+                  'Get Started',
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
               onPressed: () {},
             ),
