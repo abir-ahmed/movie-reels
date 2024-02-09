@@ -43,7 +43,7 @@ class LandingPage extends StatelessWidget {
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 40.0),
         child: Image.asset(
-          "assets/images/lp_image.png",
+          "assets/images/poster.png",
           width: width,
         ),
       )

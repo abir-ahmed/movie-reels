@@ -31,7 +31,7 @@ class MovieReelApp extends StatelessWidget {
               gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Colors.blue, Colors.red]
+                  colors: [Colors.purple, Colors.red]
                   //   colors: [
 
                   // Color.fromRGBO(195, 20, 50, 1.0),
