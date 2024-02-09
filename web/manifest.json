@@ -1,11 +1,11 @@
 {
-    "name": "work_station_web_application",
-    "short_name": "work_station_web_application",
+    "name": "movie_reels_app",
+    "short_name": "movie_reels_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A Responsive Movie Reels Flutter Application.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

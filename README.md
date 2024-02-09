@@ -1,6 +1,6 @@
 # Movie Reels
 
-A new Flutter project.
+A Responsive Movie Reels Flutter Application.
 
 ## Description
 
