@@ -29,12 +29,14 @@ class MovieReelApp extends StatelessWidget {
       body: Container(
           decoration: const BoxDecoration(
               gradient: LinearGradient(
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                  colors: [
-                Color.fromRGBO(195, 20, 50, 1.0),
-                Color.fromRGBO(36, 11, 54, 1.0)
-              ])),
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Colors.blue, Colors.red]
+                  //   colors: [
+
+                  // Color.fromRGBO(195, 20, 50, 1.0),
+                  // Color.fromRGBO(36, 11, 54, 1.0) ]
+                  )),
           child: const SingleChildScrollView(
             child: Column(
               children: [
