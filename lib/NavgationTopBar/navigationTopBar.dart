@@ -14,7 +14,7 @@ class NavigationTopBar extends StatelessWidget {
       } else if (constraints.maxWidth > 0 && constraints.maxWidth < 800) {
         return const MobileNavBar();
       } else {
-        return const UnknownDeviceNavBar();
+        return const UnsupportedDevice();
       }
     });
   }
@@ -26,7 +26,7 @@ class DesktopNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
+      padding: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -76,7 +76,11 @@ class DesktopNavBar extends StatelessWidget {
                   'Search',
                   style: TextStyle(color: Colors.white),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  // Navigate to the screen when tapped.h
+                  // Navigate to the search movie screen using a named route.
+                  Navigator.pushNamed(context, '/search');
+                },
               ),
               const SizedBox(
                 width: 30.0,
@@ -89,22 +93,13 @@ class DesktopNavBar extends StatelessWidget {
   }
 }
 
-class TabletNavBar extends StatelessWidget {
-  const TabletNavBar({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
-}
-
 class MobileNavBar extends StatelessWidget {
   const MobileNavBar({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
+      padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
       child: Column(
         children: [
           Text(
@@ -145,7 +140,11 @@ class MobileNavBar extends StatelessWidget {
                   color: Colors.pink,
                   shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                  onPressed: () {},
+                  onPressed: () {
+                    // Navigate to the screen when tapped.h
+                    // Navigate to the search movie screen using a named route.
+                    Navigator.pushNamed(context, '/search');
+                  },
                   child: const Text(
                     'Search',
                     style: TextStyle(color: Colors.white),
@@ -160,8 +159,8 @@ class MobileNavBar extends StatelessWidget {
   }
 }
 
-class UnknownDeviceNavBar extends StatelessWidget {
-  const UnknownDeviceNavBar({super.key});
+class UnsupportedDevice extends StatelessWidget {
+  const UnsupportedDevice({super.key});
 
   @override
   Widget build(BuildContext context) {
