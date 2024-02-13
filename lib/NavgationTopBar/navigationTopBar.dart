@@ -9,9 +9,8 @@ class NavigationTopBar extends StatelessWidget {
       if (constraints.maxWidth > 1200) {
         return const DesktopNavBar();
       } else if (constraints.maxWidth > 800 && constraints.maxWidth < 1200) {
-        return
-            //const TabletNavBar();
-            const DesktopNavBar(); // For now, we will use Responsive UI Look of Desktop
+        // For now, we will use Responsive UI Look of Desktop
+        return const DesktopNavBar();
       } else if (constraints.maxWidth > 0 && constraints.maxWidth < 800) {
         return const MobileNavBar();
       } else {
@@ -50,6 +49,13 @@ class DesktopNavBar extends StatelessWidget {
               ),
               const Text(
                 'About Us',
+                style: TextStyle(color: Colors.white),
+              ),
+              const SizedBox(
+                width: 30.0,
+              ),
+              const Text(
+                'News',
                 style: TextStyle(color: Colors.white),
               ),
               const SizedBox(

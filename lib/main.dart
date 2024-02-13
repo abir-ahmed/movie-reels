@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:movie_reels_app/LandingPage/landing_page.dart';
-import 'package:movie_reels_app/NavgationTopBar/navigation_top_bar.dart';
+import 'package:movie_reels_app/LandingPage/landingPage.dart';
+import 'package:movie_reels_app/NavgationTopBar/navigationTopBar.dart';
 
 void main() {
   runApp(const MainApp());
