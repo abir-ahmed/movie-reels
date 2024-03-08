@@ -112,45 +112,49 @@ class MobileNavBar extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.all(12.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  'Home',
-                  style: TextStyle(color: Colors.white),
-                ),
-                SizedBox(
-                  width: 30.0,
-                ),
-                Text(
-                  'About Us',
-                  style: TextStyle(color: Colors.white),
-                ),
-                SizedBox(
-                  width: 30.0,
-                ),
-                Text(
-                  'Portfolio',
-                  style: TextStyle(color: Colors.white),
-                ),
-                SizedBox(
-                  width: 30.0,
-                ),
-                MaterialButton(
-                  color: Colors.pink,
-                  shape: const RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
-                  onPressed: () {
-                    // Navigate to the screen when tapped.h
-                    // Navigate to the search movie screen using a named route.
-                    Navigator.pushNamed(context, '/search');
-                  },
-                  child: const Text(
-                    'Search',
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                //mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    'Home',
                     style: TextStyle(color: Colors.white),
                   ),
-                ),
-              ],
+                  SizedBox(
+                    width: 30.0,
+                  ),
+                  Text(
+                    'About Us',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(
+                    width: 30.0,
+                  ),
+                  Text(
+                    'Portfolio',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(
+                    width: 30.0,
+                  ),
+                  MaterialButton(
+                    color: Colors.pink,
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    onPressed: () {
+                      // Navigate to the screen when tapped.h
+                      // Navigate to the search movie screen using a named route.
+                      Navigator.pushNamed(context, '/search');
+                    },
+                    child: const Text(
+                      'Search',
+                      style: TextStyle(color: Colors.white),
+                    ),
+                  ),
+                ],
+              ),
             ),
           )
         ],
