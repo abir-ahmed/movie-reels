@@ -11,7 +11,7 @@ class LandingPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              "Movie Reels\nWatch Movie Review or Trailer",
+              "Watch Movie Review or Trailer",
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 30.0,
